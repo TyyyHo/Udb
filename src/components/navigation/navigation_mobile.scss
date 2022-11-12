@@ -1,0 +1,39 @@
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+    #navigation {
+
+        #logo {
+            width: 175px;
+            padding: 0 2%;
+        }
+
+
+    }
+}
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+    #navigation {
+
+        #logo {
+            width: 150px;
+
+            img {
+                width: 80%;
+            }
+
+        }
+
+        #navi_container {
+            width: 60%;
+            display: flex;
+            align-items: flex-end;
+
+            .navi_item {
+                margin: 10px 10px;
+                font-size: 25px;
+                color: rgb(231, 231, 231, 0.95);
+            }
+        }
+    }
+}
