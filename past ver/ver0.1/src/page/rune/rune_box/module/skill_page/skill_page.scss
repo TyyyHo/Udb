@@ -1,0 +1,86 @@
+.page_index {
+    border: 3px double rgb(231, 231, 231);
+}
+
+.skill_page_main {
+
+    .page_title {
+        font-size: 3vh;
+        border-bottom: 2px solid white;
+        margin-bottom: 1vh;
+    }
+
+    .page_main_container {
+        position: relative;
+
+        .page_main_content {
+            font-size: 20px;
+        }
+
+        .page_main_img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+        }
+
+    }
+
+    .page_rune_contanier {
+        width: 75%;
+        margin-bottom: 20px;
+
+        .page_rune_tag_contanier,
+        .page_rune_limit_contanier {
+            margin-bottom: 0.5%;
+            width: 90%;
+            // display: flex;
+
+            .page_rune_tag,
+            .page_rune_limit {
+                display: inline-block;
+                border: 1px solid white;
+                padding: 3px 5px;
+                margin-right: 1%;
+                margin-bottom: 5px;
+            }
+
+            .page_rune_tag {
+                color: rgb(197, 226, 253);
+            }
+
+            .page_rune_limit {
+                color: #fffceb;
+            }
+        }
+    }
+
+    .page_skill_rank_container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid white;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .magic_rune {
+            color: rgb(78, 112, 226);
+        }
+
+        .rare_rune {
+            color: rgb(205, 235, 72);
+        }
+
+        .legend_rune {
+            color: #c72634;
+        }
+    }
+
+}

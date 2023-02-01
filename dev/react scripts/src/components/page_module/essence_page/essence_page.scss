@@ -1,0 +1,93 @@
+.page_main {
+    padding-bottom: 30px;
+
+    .page_title {
+        font-size: 3vh;
+        border-bottom: 2px solid white;
+        margin-bottom: 1vh;
+    }
+
+    .page_main_container {
+        position: relative;
+
+        .page_main_content {
+            font-size: 22px;
+        }
+
+    }
+
+    button {
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size: 16px;
+        background-color: #266666;
+        cursor: pointer;
+    }
+
+}
+
+.page_form_container {
+    display: flex;
+    justify-content: center;
+
+    table {
+        width: 98%;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #151E1E;
+        // background-color: rgb(143, 22, 52);
+        font-size: 16px;
+
+        th,
+        td {
+            border: 1px solid white;
+        }
+
+        th {
+            height: 30px;
+        }
+
+        tr {
+            width: 100%;
+
+            .img_container {
+                width: 41px;
+
+                img {
+                    height: 40px;
+                }
+            }
+
+
+
+            .essence_content {
+                padding: 0 10px;
+                width: 160px;
+            }
+
+            .essence_effect {
+                padding: 0 10px;
+                max-width: 400px;
+            }
+        }
+
+        .一般版本 {
+            display: none;
+        }
+    }
+}
+
+
+
+.page_sub {
+    padding-top: 8vh;
+
+    .page_sub_title {
+        font-size: 24px;
+        border-bottom: 1px solid rgb(231, 231, 231, 0.8);
+        margin-bottom: 1vh;
+    }
+}

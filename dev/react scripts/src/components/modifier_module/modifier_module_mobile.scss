@@ -1,0 +1,91 @@
+//RWD (width is higher than 768, lower than 1280)
+@media only screen and (max-width: 1250px) {
+
+    .page_main {
+
+        button {
+            margin-right: 15px;
+        }
+
+    }
+
+    // .modifier_container {
+
+    //     .modifier {
+    //         width: 33%;
+
+    //         .modifier_content {
+    //             font-size: 14px;
+
+    //             div {
+    //                 padding-left: 5px;
+    //                 margin-top: 3px;
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    .page_sub {
+        padding-top: 8vh;
+
+        .page_sub_title {
+            font-size: 24px;
+            border-bottom: 1px solid rgb(231, 231, 231, 0.8);
+            margin-bottom: 1vh;
+        }
+    }
+
+
+}
+
+//RWD (width is lower than 767)
+@media only screen and (max-width: 767px) {
+    .page_main {
+
+        .page_title {
+            font-size: 4vh;
+        }
+
+        button {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .modifier_container {
+        display: block;
+
+        .modifier {
+            width: 90%;
+            margin: 10px 0;
+
+            .modifier_content {
+                font-size: 14px;
+
+                div {
+                    padding-left: 5px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+    .page_sub {
+
+        .img_frame {
+            display: block;
+
+            .page_img_container {
+                width: 100%;
+                margin-bottom: 5%;
+            }
+
+            .page_sub_img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,64 @@
+#rune_filter {
+
+    .rune_page_title {
+        font-size: xx-large;
+        margin-bottom: 30px;
+    }
+
+    .btn_rune_type {
+        position: relative;
+        margin-left: 8px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+        border: 1px solid white;
+        background-color: rgb(2, 33, 211);
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+    button {
+        padding: 3px 6px;
+        color: rgb(230, 230, 230);
+        font-size: medium;
+        background-color: #c2342a;
+        border: 1px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .rune_tag_container {
+
+        button {
+            margin: 0px 0px 8px 8px;
+            padding: 3px 12px;
+            background-color: #266666;
+
+            &:hover {
+                transform: translate(0, -1px);
+            }
+        }
+    }
+
+
+    .rune_filter_bar_container {
+        margin-left: 8px;
+        margin-bottom: 2%;
+        margin-top: 1%;
+
+        .rune_filter_bar {
+            width: 50%;
+            height: 25px;
+            border-radius: 10px;
+            margin: 0.5% 1% 0.5% 0;
+            padding: 0 10px;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+    }
+
+}

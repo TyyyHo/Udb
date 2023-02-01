@@ -1,0 +1,146 @@
+#rune_filter {
+
+    .rune_page_title {
+        font-size: xx-large;
+        margin-bottom: 30px;
+    }
+
+    .rune_switch_container {
+        display: flex;
+        margin: 0 8px 20px 8px;
+
+        .rune_switch_box {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+
+
+            span {
+                display: flex;
+                align-items: center;
+                height: 32px;
+                font-size: x-large;
+                font-weight: bold;
+                color: rgb(227, 221, 235);
+            }
+
+            .rune_switch {
+                display: flex;
+                padding-left: 3px;
+                margin: 0 10px;
+                align-items: center;
+                width: 32px;
+                height: 18px;
+                border-radius: 20px;
+                background-color: white;
+                cursor: pointer;
+
+                .rune_switch_dot {
+                    // border: 1px solid red;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50px;
+                    background-color: rgba(96, 0, 252, 0.815);
+                }
+
+                .skill {
+                    transition: all .5s ease;
+                }
+
+                .link {
+                    transform: translateX(13px);
+                    transition: all .5s ease;
+                }
+
+                .en {
+                    transform: translateX(13px);
+                    transition: all .5s ease;
+                }
+
+                .ch {
+                    transition: all .5s ease;
+                }
+
+            }
+        }
+
+
+
+        // 符文類別/中英切換按鈕
+        .btn_rune_type {
+            position: relative;
+            margin-right: 6%;
+            padding: 3% 6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 580;
+            // color: black;
+            // border: 1px solid black;
+            background-color: rgba(96, 0, 252, 0.815);
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+
+    // 清除按鈕
+    button {
+        padding: 3px 6px;
+        color: rgb(230, 230, 230);
+        font-size: medium;
+        background-color: #c2342a;
+        border: 1px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .rune_tag_container {
+
+        // 篩選keyword按鈕
+        button {
+            margin: 0px 0px 8px 8px;
+            padding: 3px 12px;
+            background-color: #266666;
+
+            &:hover {
+                transform: translate(0, -1px);
+            }
+        }
+    }
+
+
+    .rune_filter_bar_container {
+        margin-left: 8px;
+        margin-bottom: 2%;
+        margin-top: 1%;
+
+        .rune_filter_bar {
+            width: 50%;
+            height: 25px;
+            border-radius: 10px;
+            margin: 0.5% 1% 0.5% 0;
+            padding: 0 10px;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+    .rune_filter_bar {
+        font-size: small;
+
+        &::placeholder {
+            font-size: small;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .rune_filter_bar::placeholder {
+        color: white;
+    }
+}
