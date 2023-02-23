@@ -44,7 +44,7 @@ const Item_list = () => {
         <div className="box_container">
           {combined_data_item
             .filter((i) => {
-              return i.page_type == "item_item";
+              return i.page_type === "item_item";
             })
             .map((item, index) => {
               return (

@@ -14,7 +14,7 @@ const Rune_filter = ({
   let clickBtn = (e) => {
     // 點擊將關鍵字加進搜尋欄，已有的不重複加入
     if (filter_bar.indexOf(e.target.innerText) < 0) {
-      if (filter_bar == "") {
+      if (filter_bar === "") {
         let filter_string = e.target.innerText + " "
         set_filter_bar(filter_string);
       } else {
@@ -37,7 +37,7 @@ const Rune_filter = ({
 
   // 若曾經造訪此頁面，render時參照最後一次來訪時的狀態
   useEffect(() => {
-    if (window.localStorage.getItem("rune_type") != "link")
+    if (window.localStorage.getItem("rune_type") !== "link")
       set_rune_type("skill");
   }, []);
 
