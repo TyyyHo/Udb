@@ -28,30 +28,15 @@ import Item from "./page/item/item.jsx";
 import Modifier_list from "./page/modifier/modifier_list.jsx";
 import Modifier from "./page/modifier/modifier.jsx";
 
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyC6Zoj9BQxg2pEO9PACx28YiWoRq0i_QFY",
-  authDomain: "undecemberdb.firebaseapp.com",
-  projectId: "undecemberdb",
-  storageBucket: "undecemberdb.appspot.com",
-  messagingSenderId: "3987939648",
-  appId: "1:3987939648:web:159cf2aaae908d16b89aa5",
-  measurementId: "G-CGT6ZE825D",
-};
+import { firebase } from "./firebaseConfig";
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 function App() {
+  firebase(initializeApp, getAnalytics);
   return (
     <div className="basic_bg">
       <Helmet>
