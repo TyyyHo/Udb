@@ -1,6 +1,6 @@
 import "./app.scss";
 import "./app_mobile.scss";
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
