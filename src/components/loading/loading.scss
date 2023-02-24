@@ -1,0 +1,45 @@
+.loading {
+    width: 100%;
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+
+
+    img {
+        opacity: 0.5;
+        width: 150px;
+        animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+
+}
+
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+    .loading {
+
+        img {
+            width: 100px;
+        }
+    }
+
+}
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+    .loading {
+
+        img {
+            width: 60px;
+        }
+    }
+}
