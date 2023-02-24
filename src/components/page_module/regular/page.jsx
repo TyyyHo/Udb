@@ -1,4 +1,3 @@
-import React from "react";
 import "./page.scss";
 import "./page_mobile.scss";
 
@@ -35,16 +34,12 @@ const Page = ({ data }) => {
           return (
             <div id={item.sub_content_title} className="page_sub" key={index}>
               <div className="page_sub_title">{item.sub_content_title}</div>
-              {/* <div
-                className="page_sub_content"
-                dangerouslySetInnerHTML={{ __html: item.page_sub_content }}
-              ></div> */}
               <div className="page_sub_content">{item.page_sub_content}</div>
               <div className="img_frame">
                 {item.img.map((t, inner_index) => {
                   return (
                     <div key={inner_index} className="page_img_container">
-                      <img className="page_sub_img" src={t.url} alt="img" />
+                      <img className="page_sub_img" loading={ index === 0 ? "eager":"lazy"} src={t.url} alt="img" />
                       <div className="img_description">{t.description}</div>
                     </div>
                   );

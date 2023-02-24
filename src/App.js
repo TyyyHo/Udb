@@ -4,6 +4,10 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 // components
 import Navigation from "./components/navigation/navigation.jsx";
 import To_top from "./components/to_top/to_top.jsx";
@@ -13,25 +17,23 @@ import Router_restoration from "./components/router_restoration/router_restorati
 import Home from "./page/home/home.jsx";
 
 // information
-import Information_list from "./page/information/information_list.jsx";
-import Information from "./page/information/information.jsx";
+const Information_list = lazy(()=> import(/* webpackChunkName: "Information_list" */"./page/information/information_list.jsx"))
+const Information = lazy(()=> import(/* webpackChunkName: "Information" */"./page/information/information.jsx"))
 
 // rune
-import Rune_list from "./page/rune/rune_list.jsx";
-import Skill_page from "./page/rune/rune_page/rune_page.jsx";
+const Rune_list = lazy(()=> import(/* webpackChunkName: "Rune_list" */"./page/rune/rune_list.jsx"))
+const Skill_page = lazy(()=> import(/* webpackChunkName: "Skill_page" */"./page/rune/rune_page/rune_page.jsx"))
 
 // item
-import Item_list from "./page/item/item_list.jsx";
-import Item from "./page/item/item.jsx";
+const Item_list = lazy(()=> import(/* webpackChunkName: "Item_list" */"./page/item/item_list.jsx"))
+const Item = lazy(()=> import(/* webpackChunkName: "Item" */"./page/item/item.jsx"))
 
 // modfier
-import Modifier_list from "./page/modifier/modifier_list.jsx";
-import Modifier from "./page/modifier/modifier.jsx";
+const Modifier_list = lazy(()=> import(/* webpackChunkName: "Modifier_list" */"./page/modifier/modifier_list.jsx"))
+const Modifier = lazy(()=> import(/* webpackChunkName: "Modifier" */"./page/modifier/modifier.jsx"))
 
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -58,7 +60,7 @@ function App() {
         <meta charSet="utf-8" />
         <title>Udb</title>
         <link rel="icon" href="/img/web/icon.ico" type="image/ico" />
-        <link rel="apple-touch-icon" href="/img/moon.ipng" />
+        <link rel="apple-touch-icon" href="/img/moon.png" />
         <meta name="description" content="惡月十三中文資料庫" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
@@ -80,6 +82,7 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Router_restoration />
+        <Suspense fallback={<div>加載中</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* information */}
@@ -107,6 +110,7 @@ function App() {
           {/* <Route path="*" element={<h1>404 not find</h1>} /> */}
           {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </div>
   );

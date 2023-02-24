@@ -12,10 +12,7 @@ const Item = () => {
   // 網址參數
   let { modifier_obj } = useParams();
   // 選取相符資料
-  let matched_data = combined_data_modifier.filter((item) => {
-    return item.page_title_en === modifier_obj;
-  })[0];
-
+  let matched_data = combined_data_modifier.filter((item) => item.page_title_en === modifier_obj)[0];
 
   return (
     <div id="modifier" className="main_container">
