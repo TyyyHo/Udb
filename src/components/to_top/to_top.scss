@@ -11,10 +11,7 @@
     bottom: 3%;
     z-index: 1000;
     display: flex;
-
-    &:hover {
-        cursor: pointer;
-    }
+    cursor: pointer;
 
     img {
         padding: 3px;

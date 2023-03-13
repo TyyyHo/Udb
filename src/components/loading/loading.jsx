@@ -1,5 +1,5 @@
 import "./loading.scss";
-import ladingImg from "./asset/loading.png";
+import ladingImg from "./asset/loading.webp";
 
 const Loading = () => {
   return (

@@ -29,9 +29,6 @@ const To_top = () => {
     return (
       <>
         <div className="to_top">
-          {/* <div className="material-icons" onClick={go_to_top}>
-            arrow_upward
-          </div> */}
           <img src="/img/web/up_ward.png" alt="A" onClick={go_to_top} />
         </div>
       </>

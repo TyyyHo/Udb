@@ -57,7 +57,7 @@ function App() {
     <div className="basic_bg">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Udb</title>
+        <title>Udb - 惡月十三中文資料庫</title>
         <link rel="icon" href="/img/web/icon.ico" type="image/ico" />
         <link rel="apple-touch-icon" href="/img/moon.png" />
         <meta name="description" content="惡月十三中文資料庫" />

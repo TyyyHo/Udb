@@ -110,7 +110,6 @@ const Rune_filter = ({
           onChange={(e) => set_filter_bar(e.target.value)}
         />
         <button onClick={(e) => set_filter_bar("")}>清除</button>
-        {/* <div>(輸入多個條件時，需用空格隔開)</div> */}
       </div>
       <hr />
       {/* end */}
