@@ -70,6 +70,7 @@ function App() {
           property="og:image"
           content="https://undecember.line.games/static/launching/common/images/pc/media/new_undecember_media_01.jpg"
         ></meta>
+ 
       </Helmet>
 
 
