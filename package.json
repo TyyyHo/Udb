@@ -12,8 +12,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "eject": "react-scripts eject",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:check": "eslint . --max-warnings 0",
+    "type:check": "tsc --noEmit",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "prepare": "husky"
   },
   "eslintConfig": {
     "extends": [
@@ -34,11 +42,23 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-helmet": "^6.1.11",
+    "eslint": "^8.57.1",
     "firebase": "^10.12.5",
+    "husky": "^9.1.7",
+    "jest": "^27.5.1",
+    "jest-environment-jsdom": "^30.3.0",
+    "prettier": "^3.8.1",
     "react-scripts": "^5.0.1",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "typescript": "^4.9.5"
   }
 }
