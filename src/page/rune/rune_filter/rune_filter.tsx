@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./rune_filter.scss";
 import { rune_tag_list } from "./rune_tag_list";
 
-const Rune_filter = ({
+const RuneFilter = ({
   rune_type,
   set_rune_type,
   filter_bar,
@@ -39,7 +39,7 @@ const Rune_filter = ({
   useEffect(() => {
     if (window.localStorage.getItem("rune_type") !== "link")
       set_rune_type("skill");
-  }, []);
+  }, [set_rune_type]);
 
   // 若曾經切換rune_type，儲存當下狀態(localStorage)
   useEffect(() => {
@@ -77,7 +77,7 @@ const Rune_filter = ({
             <div
               className="rune_switch"
               onClick={() => {
-                if (language == "ch") {
+                if (language === "ch") {
                   set_language("en");
                 } else {
                   set_language("ch");
@@ -117,4 +117,4 @@ const Rune_filter = ({
   );
 };
 
-export default Rune_filter;
+export default RuneFilter;

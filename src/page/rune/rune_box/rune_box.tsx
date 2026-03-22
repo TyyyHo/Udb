@@ -1,7 +1,7 @@
 import React from "react";
 import "./rune_box.scss";
 import "./rune_box_mobile.scss";
-import { Box_module } from "../../../components/skill_box/box_module";
+import { BoxModule } from "../../../components/skill_box/box_module";
 
 // data
 import { red_skill } from "./skill_data/red_skill";
@@ -11,7 +11,7 @@ import { red_link } from "./link_data/red_link";
 import { green_link } from "./link_data/green_link";
 import { blue_link } from "./link_data/blue_link";
 
-const Rune_box = ({ rune_type, filter_bar, language }) => {
+const RuneBox = ({ rune_type, filter_bar, language }) => {
   return (
     <div>
       {/* box_container */}
@@ -21,21 +21,21 @@ const Rune_box = ({ rune_type, filter_bar, language }) => {
             skill: (
               <>
                 {/* 紅底技能 */}
-                <Box_module
+                <BoxModule
                   className={"rune_red_container"}
                   rune_data={red_skill}
                   filter_bar={filter_bar}
                   language={language}
                 />
                 {/* 綠底技能 */}
-                <Box_module
+                <BoxModule
                   className={"rune_green_container"}
                   rune_data={green_skill}
                   filter_bar={filter_bar}
                   language={language}
                 />
                 {/* 藍底技能 */}
-                <Box_module
+                <BoxModule
                   className={"rune_blue_container"}
                   rune_data={blue_skill}
                   filter_bar={filter_bar}
@@ -46,21 +46,21 @@ const Rune_box = ({ rune_type, filter_bar, language }) => {
             link: (
               <>
                 {/* 紅底技能 */}
-                <Box_module
+                <BoxModule
                   className={"rune_red_container"}
                   rune_data={red_link}
                   filter_bar={filter_bar}
                   language={language}
                 />
                 {/* 綠底技能 */}
-                <Box_module
+                <BoxModule
                   className={"rune_green_container"}
                   rune_data={green_link}
                   filter_bar={filter_bar}
                   language={language}
                 />
                 {/* 藍底技能 */}
-                <Box_module
+                <BoxModule
                   className={"rune_blue_container"}
                   rune_data={blue_link}
                   filter_bar={filter_bar}
@@ -77,4 +77,4 @@ const Rune_box = ({ rune_type, filter_bar, language }) => {
   );
 };
 
-export default Rune_box;
+export default RuneBox;

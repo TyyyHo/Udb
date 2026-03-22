@@ -10,27 +10,27 @@ import { getAnalytics } from "firebase/analytics";
 
 // components
 import Navigation from "./components/navigation/navigation";
-import To_top from "./components/to_top/to_top";
+import ToTop from "./components/to_top/to_top";
 import Loading from "./components/loading/loading";
-import Router_restoration from "./components/router_restoration/router_restoration";
+import RouterRestoration from "./components/router_restoration/router_restoration";
 
 // pages
 import Home from "./page/home/home";
 
 // information
-const Information_list = lazy(() =>import(/* webpackChunkName: "Information_list" */ "./page/information/information_list"));
+const InformationList = lazy(() =>import(/* webpackChunkName: "Information_list" */ "./page/information/information_list"));
 const Information = lazy(() =>import(/* webpackChunkName: "Information" */ "./page/information/information"));
 
 // rune
-const Rune_list = lazy(() =>import(/* webpackChunkName: "Rune_list" */ "./page/rune/rune_list"));
-const Skill_page = lazy(() =>import(/* webpackChunkName: "Skill_page" */ "./page/rune/rune_page/rune_page"));
+const RuneList = lazy(() =>import(/* webpackChunkName: "Rune_list" */ "./page/rune/rune_list"));
+const SkillPage = lazy(() =>import(/* webpackChunkName: "Skill_page" */ "./page/rune/rune_page/rune_page"));
 
 // item
-const Item_list = lazy(() =>import(/* webpackChunkName: "Item_list" */ "./page/item/item_list"));
+const ItemList = lazy(() =>import(/* webpackChunkName: "Item_list" */ "./page/item/item_list"));
 const Item = lazy(() =>import(/* webpackChunkName: "Item" */ "./page/item/item"));
 
 // modfier
-const Modifier_list = lazy(() =>import(/* webpackChunkName: "Modifier_list" */ "./page/modifier/modifier_list"));
+const ModifierList = lazy(() =>import(/* webpackChunkName: "Modifier_list" */ "./page/modifier/modifier_list"));
 const Modifier = lazy(() =>import(/* webpackChunkName: "Modifier" */ "./page/modifier/modifier"));
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -74,31 +74,31 @@ function App() {
       </Helmet>
 
 
-      <To_top />
+      <ToTop />
       <BrowserRouter>
         <Navigation />
-        <Router_restoration />
+        <RouterRestoration />
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Home />} />
             {/* information */}
             <Route path="/information">
-              <Route index element={<Information_list />} />
+              <Route index element={<InformationList />} />
               <Route path=":information_obj" element={<Information />} />
             </Route>
             {/* rune */}
             <Route path="/rune">
-              <Route index element={<Rune_list />} />
-              <Route path=":rune_obj" element={<Skill_page />} />
+              <Route index element={<RuneList />} />
+              <Route path=":rune_obj" element={<SkillPage />} />
             </Route>
             {/* item */}
             <Route path="/item">
-              <Route index element={<Item_list />} />
+              <Route index element={<ItemList />} />
               <Route path=":item_obj" element={<Item />} />
             </Route>
             {/* modifier */}
             <Route path="/modifier">
-              <Route index element={<Modifier_list />} />
+              <Route index element={<ModifierList />} />
               <Route path=":modifier_obj" element={<Modifier />} />
             </Route>
 

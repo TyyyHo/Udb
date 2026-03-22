@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Box_module = ({ className, rune_data, filter_bar, language }) => {
+const BoxModule = ({ className, rune_data, filter_bar, language }) => {
   let filter_by_tag = (rune) => {
     // 搜尋字串轉陣列
     let filter_bar_array = filter_bar.split(" ");
     // 資料tag轉字串
     let tag = rune.rune_tag.join("");
     // 搜尋欄若為空字串，return所有技能
-    if (filter_bar == "") {
+    if (filter_bar === "") {
       return rune;
     } else {
       // 搜尋陣列中，有符合tag的技能就return
@@ -51,4 +51,4 @@ const Box_module = ({ className, rune_data, filter_bar, language }) => {
   );
 };
 
-export { Box_module };
+export { BoxModule };

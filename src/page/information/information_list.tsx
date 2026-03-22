@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { combined_data_information } from "./combined_data_information";
 
-const Information_list = () => {
+const InformationList = () => {
   return (
     <div id="information_list" className="main_container">
       {/* 入門指南 */}
@@ -11,7 +11,7 @@ const Information_list = () => {
         <div className="box_container">
           {combined_data_information
             .filter((i) => {
-              return i.page_type == "information_beginner";
+              return i.page_type === "information_beginner";
             })
             .map((item, index) => {
               return (
@@ -35,7 +35,7 @@ const Information_list = () => {
         <div className="box_container">
           {combined_data_information
             .filter((i) => {
-              return i.page_type == "information_system";
+              return i.page_type === "information_system";
             })
             .map((item, index) => {
               return (
@@ -59,7 +59,7 @@ const Information_list = () => {
         <div className="box_container">
           {combined_data_information
             .filter((i) => {
-              return i.page_type == "information_mechanics";
+              return i.page_type === "information_mechanics";
             })
             .map((item, index) => {
               return (
@@ -94,4 +94,4 @@ const Information_list = () => {
   );
 };
 
-export default Information_list;
+export default InformationList;

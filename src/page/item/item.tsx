@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { combined_data_item } from "./combined_data_item";
 
 // components
-import Essence_page from "../../components/page_module/essence_page/essence_page";
+import EssencePage from "../../components/page_module/essence_page/essence_page";
 
 const Item = () => {
   // 網址參數
@@ -17,7 +17,7 @@ const Item = () => {
 
   return (
     <div id="item" className="main_container">
-      <Essence_page data={matched_data} />
+      <EssencePage data={matched_data} />
     </div>
   );
 };

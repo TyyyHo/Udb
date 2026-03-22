@@ -12,7 +12,7 @@ const Information = () => {
   let { information_obj } = useParams();
   // 選取相符資料
   let matched_data = combined_data_information.filter((item) => {
-    return item.page_title_en == information_obj;
+    return item.page_title_en === information_obj;
   })[0];
 
   return (

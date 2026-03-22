@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { combined_data_modifier } from "./combined_data_modifier";
 
 // components
-import Modifier_module from "../../components/modifier_module/modifier_module";
+import ModifierModule from "../../components/modifier_module/modifier_module";
 
 const Item = () => {
 
@@ -15,8 +15,8 @@ const Item = () => {
   let matched_data = combined_data_modifier.filter((item) => item.page_title_en === modifier_obj)[0];
 
   return (
-    <div id="modifier" className="main_container">
-      <Modifier_module data={matched_data} />
+      <div id="modifier" className="main_container">
+      <ModifierModule data={matched_data} />
     </div>
   );
 };
