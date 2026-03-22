@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import "./to_top.scss"
-import "./to_top_mobile.scss"
+import "./to_top.css"
+import "./to_top_mobile.css"
 
 const ToTop = () => {
   const [toTopBtn, setToTopBtn] = useState(false)

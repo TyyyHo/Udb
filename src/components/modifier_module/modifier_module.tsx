@@ -1,6 +1,6 @@
 import { useState } from "react"
-import "./modifier_module.scss"
-import "./modifier_module_mobile.scss"
+import "./modifier_module.css"
+import "./modifier_module_mobile.css"
 
 type ModifierModuleProps = {
   data: any

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import "./navigation.scss"
-import "./navigation_mobile.scss"
+import "./navigation.css"
+import "./navigation_mobile.css"
 
 const Navigation = () => {
   // mobile時navi縮放狀態

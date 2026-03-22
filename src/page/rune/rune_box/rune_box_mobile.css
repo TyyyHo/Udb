@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1250px) {
+  .rune_box_container {
+    display: block;
+  }
+  .rune_box_container .rune_red_container,
+  .rune_box_container .rune_green_container {
+    width: 100%;
+    border-right: none;
+  }
+  .rune_box_container .rune_blue_container {
+    width: 100%;
+  }
+  .rune_box_container .rune_box {
+    margin: 10px 0 10px 10px;
+    font-size: 18px;
+  }
+  .rune_box_container .rune_box img {
+    width: 50px;
+  }
+  .rune_box_container .rune_box .rune_box_name {
+    margin-left: 5%;
+  }
+}

@@ -1,0 +1,14 @@
+#home .pined_post {
+  display: flex;
+  justify-content: space-between;
+}
+#home .pined_post #web_info {
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+#home .pined_post #official_info,
+#home .pined_post #index {
+  width: 45%;
+}

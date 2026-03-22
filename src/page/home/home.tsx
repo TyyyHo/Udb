@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import "./home.scss"
-import "./home_mobile.scss"
+import "./home.css"
+import "./home_mobile.css"
 
 const Home = () => {
   return (

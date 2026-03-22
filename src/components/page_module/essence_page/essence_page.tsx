@@ -1,6 +1,6 @@
 import { useState } from "react"
-import "./essence_page.scss"
-import "./essence_page_mobile.scss"
+import "./essence_page.css"
+import "./essence_page_mobile.css"
 
 type EssencePageProps = {
   data: any

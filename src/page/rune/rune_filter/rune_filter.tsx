@@ -1,5 +1,5 @@
 import { Dispatch, MouseEvent, SetStateAction, useEffect } from "react"
-import "./rune_filter.scss"
+import "./rune_filter.css"
 import { rune_tag_list } from "./rune_tag_list"
 
 type RuneFilterProps = {

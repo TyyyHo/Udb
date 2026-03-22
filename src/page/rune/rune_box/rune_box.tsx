@@ -1,5 +1,5 @@
-import "./rune_box.scss"
-import "./rune_box_mobile.scss"
+import "./rune_box.css"
+import "./rune_box_mobile.css"
 import { BoxModule } from "../../../components/skill_box/box_module"
 
 // data
