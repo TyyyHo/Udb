@@ -12,9 +12,6 @@ import Loading from "./components/loading/loading"
 import Navigation from "./components/navigation/navigation"
 import RouterRestoration from "./components/router_restoration/router_restoration"
 import ToTop from "./components/to_top/to_top"
-import { getAnalytics } from "firebase/analytics"
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app"
 
 // information
 const InformationList = lazy(
@@ -60,24 +57,7 @@ const Modifier = lazy(
   () => import(/* webpackChunkName: "Modifier" */ "./page/modifier/modifier")
 )
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyC6Zoj9BQxg2pEO9PACx28YiWoRq0i_QFY",
-  authDomain: "undecemberdb.firebaseapp.com",
-  projectId: "undecemberdb",
-  storageBucket: "undecemberdb.appspot.com",
-  messagingSenderId: "3987939648",
-  appId: "1:3987939648:web:159cf2aaae908d16b89aa5",
-  measurementId: "G-CGT6ZE825D",
-}
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig)
-getAnalytics(app)
+const routerBaseName = process.env.PUBLIC_URL || "/"
 
 function App() {
   return (
@@ -100,7 +80,7 @@ function App() {
       </Helmet>
 
       <ToTop />
-      <BrowserRouter>
+      <BrowserRouter basename={routerBaseName}>
         <Navigation />
         <RouterRestoration />
         <Suspense fallback={<Loading />}>
