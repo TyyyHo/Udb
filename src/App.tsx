@@ -1,37 +1,64 @@
-import "./app.scss";
-import "./app_mobile.scss";
-import React, { Suspense, lazy } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import "./app.scss"
+import "./app_mobile.scss"
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Suspense, lazy } from "react"
 
-// components
-import Navigation from "./components/navigation/navigation";
-import ToTop from "./components/to_top/to_top";
-import Loading from "./components/loading/loading";
-import RouterRestoration from "./components/router_restoration/router_restoration";
-
+import { Helmet } from "react-helmet"
 // pages
-import Home from "./page/home/home";
+import Home from "./page/home/home"
+import Loading from "./components/loading/loading"
+// components
+import Navigation from "./components/navigation/navigation"
+import RouterRestoration from "./components/router_restoration/router_restoration"
+import ToTop from "./components/to_top/to_top"
+import { getAnalytics } from "firebase/analytics"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app"
 
 // information
-const InformationList = lazy(() =>import(/* webpackChunkName: "Information_list" */ "./page/information/information_list"));
-const Information = lazy(() =>import(/* webpackChunkName: "Information" */ "./page/information/information"));
+const InformationList = lazy(
+  () =>
+    import(
+      /* webpackChunkName: "Information_list" */ "./page/information/information_list"
+    )
+)
+const Information = lazy(
+  () =>
+    import(
+      /* webpackChunkName: "Information" */ "./page/information/information"
+    )
+)
 
 // rune
-const RuneList = lazy(() =>import(/* webpackChunkName: "Rune_list" */ "./page/rune/rune_list"));
-const SkillPage = lazy(() =>import(/* webpackChunkName: "Skill_page" */ "./page/rune/rune_page/rune_page"));
+const RuneList = lazy(
+  () => import(/* webpackChunkName: "Rune_list" */ "./page/rune/rune_list")
+)
+const SkillPage = lazy(
+  () =>
+    import(
+      /* webpackChunkName: "Skill_page" */ "./page/rune/rune_page/rune_page"
+    )
+)
 
 // item
-const ItemList = lazy(() =>import(/* webpackChunkName: "Item_list" */ "./page/item/item_list"));
-const Item = lazy(() =>import(/* webpackChunkName: "Item" */ "./page/item/item"));
+const ItemList = lazy(
+  () => import(/* webpackChunkName: "Item_list" */ "./page/item/item_list")
+)
+const Item = lazy(
+  () => import(/* webpackChunkName: "Item" */ "./page/item/item")
+)
 
 // modfier
-const ModifierList = lazy(() =>import(/* webpackChunkName: "Modifier_list" */ "./page/modifier/modifier_list"));
-const Modifier = lazy(() =>import(/* webpackChunkName: "Modifier" */ "./page/modifier/modifier"));
+const ModifierList = lazy(
+  () =>
+    import(
+      /* webpackChunkName: "Modifier_list" */ "./page/modifier/modifier_list"
+    )
+)
+const Modifier = lazy(
+  () => import(/* webpackChunkName: "Modifier" */ "./page/modifier/modifier")
+)
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -46,11 +73,11 @@ const firebaseConfig = {
   messagingSenderId: "3987939648",
   appId: "1:3987939648:web:159cf2aaae908d16b89aa5",
   measurementId: "G-CGT6ZE825D",
-};
+}
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+const app = initializeApp(firebaseConfig)
+getAnalytics(app)
 
 function App() {
   return (
@@ -70,9 +97,7 @@ function App() {
           property="og:image"
           content="https://undecember.line.games/static/launching/common/images/pc/media/new_undecember_media_01.jpg"
         ></meta>
- 
       </Helmet>
-
 
       <ToTop />
       <BrowserRouter>
@@ -101,12 +126,11 @@ function App() {
               <Route index element={<ModifierList />} />
               <Route path=":modifier_obj" element={<Modifier />} />
             </Route>
-
           </Routes>
         </Suspense>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

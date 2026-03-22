@@ -2,7 +2,7 @@ export const skill_cost = [
   {
     page_title_en: "skill_cost",
     page_title: "資源消耗增幅",
-    page_type:"information_system",
+    page_type: "information_system",
     page_main_content:
       "惡月十三中，部分技能的消耗顯示為百分比形式，代表啟用該技能時，其他技能的消耗都會提升該百分比；多個類似技能是以累乘的方式進行疊加。",
     page_main_img: "",
@@ -32,4 +32,4 @@ export const skill_cost = [
     ],
     source: [],
   },
-];
+]

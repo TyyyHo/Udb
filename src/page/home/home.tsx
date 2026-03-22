@@ -1,7 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./home.scss";
-import "./home_mobile.scss";
+import { Link } from "react-router-dom"
+import "./home.scss"
+import "./home_mobile.scss"
 
 const Home = () => {
   return (
@@ -42,7 +41,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

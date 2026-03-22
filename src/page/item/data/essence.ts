@@ -2,7 +2,7 @@ export const essence = [
   {
     page_title_en: "essence",
     page_title: "精華",
-    page_btn_content:["一般版本", "流亡者好讀版"],
+    page_btn_content: ["一般版本", "流亡者好讀版"],
     page_type: "item_item",
     page_main_content: "升級裝備",
     page_main_img: "",
@@ -174,4 +174,4 @@ export const essence = [
     ],
     source: [],
   },
-];
+]

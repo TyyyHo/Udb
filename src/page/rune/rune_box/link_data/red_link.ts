@@ -41,7 +41,6 @@ export const red_link = [
     sub_content: [],
     source: [],
   },
-  
-    //   end
-  ];
-  
+
+  //   end
+]

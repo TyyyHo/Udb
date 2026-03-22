@@ -20,7 +20,6 @@ export const blue_link = [
     sub_content: [],
     source: [],
   },
-  
-    //   end
-  ];
-  
+
+  //   end
+]

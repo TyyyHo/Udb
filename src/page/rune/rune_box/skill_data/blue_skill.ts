@@ -1164,4 +1164,4 @@ export const blue_skill = [
   },
 
   //   end
-];
+]

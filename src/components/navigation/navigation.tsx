@@ -1,16 +1,15 @@
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import "./navigation.scss";
-import "./navigation_mobile.scss";
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import "./navigation.scss"
+import "./navigation_mobile.scss"
 
 const Navigation = () => {
   // mobile時navi縮放狀態
-  const [navi_switch, set_navi_switch] = useState("off");
+  const [navi_switch, set_navi_switch] = useState("off")
   // 換頁後收起navi
   const cancel_navi = () => {
-    set_navi_switch("off");
-  };
+    set_navi_switch("off")
+  }
 
   return (
     <div id="navigation">
@@ -25,10 +24,10 @@ const Navigation = () => {
         onClick={() => {
           set_navi_switch(() => {
             if (navi_switch === "on") {
-              return "off";
+              return "off"
             }
-            return "on";
-          });
+            return "on"
+          })
         }}
       >
         <div className="navi_toggler material-icons">menu</div>
@@ -51,7 +50,7 @@ const Navigation = () => {
 
       {/* end */}
     </div>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

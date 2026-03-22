@@ -1,24 +1,24 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom"
 
 // data
-import { combined_data_modifier } from "./combined_data_modifier";
+import { combined_data_modifier } from "./combined_data_modifier"
 
 // components
-import ModifierModule from "../../components/modifier_module/modifier_module";
+import ModifierModule from "../../components/modifier_module/modifier_module"
 
 const Item = () => {
-
   // 網址參數
-  let { modifier_obj } = useParams();
+  let { modifier_obj } = useParams()
   // 選取相符資料
-  let matched_data = combined_data_modifier.filter((item) => item.page_title_en === modifier_obj)[0];
+  let matched_data = combined_data_modifier.filter(
+    item => item.page_title_en === modifier_obj
+  )[0]
 
   return (
-      <div id="modifier" className="main_container">
+    <div id="modifier" className="main_container">
       <ModifierModule data={matched_data} />
     </div>
-  );
-};
+  )
+}
 
-export default Item;
+export default Item

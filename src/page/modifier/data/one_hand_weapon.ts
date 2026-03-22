@@ -107,12 +107,23 @@ export const one_hand_weapon = [
       {
         modifier_type: "unique",
         modifier: "固定詞綴",
-        value: ["攻擊速度+%", "施展速度+%", "僕從攻擊速度+%", "僕從施展速度+%", "弩攻擊速度+%"],
+        value: [
+          "攻擊速度+%",
+          "施展速度+%",
+          "僕從攻擊速度+%",
+          "僕從施展速度+%",
+          "弩攻擊速度+%",
+        ],
       },
       {
         modifier_type: "prefix",
         modifier: "前綴",
-        value: ["連鎖次數+", "貫穿次數+/投射體傷害+%", "弩傷害增幅%", "深淵體傷害增幅%"],
+        value: [
+          "連鎖次數+",
+          "貫穿次數+/投射體傷害+%",
+          "弩傷害增幅%",
+          "深淵體傷害增幅%",
+        ],
       },
       {
         modifier_type: "suffix",
@@ -124,7 +135,13 @@ export const one_hand_weapon = [
       {
         modifier_type: "unique",
         modifier: "固定詞綴",
-        value: ["攻擊爆擊度+%", "咒文爆擊度+%", "僕從爆擊度+%", "弩爆擊度+%", "爆擊度+%"],
+        value: [
+          "攻擊爆擊度+%",
+          "咒文爆擊度+%",
+          "僕從爆擊度+%",
+          "弩爆擊度+%",
+          "爆擊度+%",
+        ],
       },
       {
         modifier_type: "prefix",
@@ -141,7 +158,13 @@ export const one_hand_weapon = [
       {
         modifier_type: "unique",
         modifier: "固定詞綴",
-        value: ["裝備道具品質+", "弱化狀態異常發生指數+", "深淵體的出血發生指數+", "弩出血發生指數+", "魔力+%"],
+        value: [
+          "裝備道具品質+",
+          "弱化狀態異常發生指數+",
+          "深淵體的出血發生指數+",
+          "弩出血發生指數+",
+          "魔力+%",
+        ],
       },
       {
         modifier_type: "prefix",
@@ -158,7 +181,13 @@ export const one_hand_weapon = [
       {
         modifier_type: "unique",
         modifier: "固定詞綴",
-        value: ["火焰貫穿+%", "火焰貫穿力+", "僕從傷害貫穿+%", "弩傷害貫穿+%", "爆擊傷害+%"],
+        value: [
+          "火焰貫穿+%",
+          "火焰貫穿力+",
+          "僕從傷害貫穿+%",
+          "弩傷害貫穿+%",
+          "爆擊傷害+%",
+        ],
       },
       {
         modifier_type: "prefix",
@@ -175,7 +204,13 @@ export const one_hand_weapon = [
       {
         modifier_type: "unique",
         modifier: "固定詞綴",
-        value: ["冰霜貫穿+%", "冰霜貫穿力+", "僕從元素貫穿力+", "弩元素貫穿力+", "爆擊傷害+%"],
+        value: [
+          "冰霜貫穿+%",
+          "冰霜貫穿力+",
+          "僕從元素貫穿力+",
+          "弩元素貫穿力+",
+          "爆擊傷害+%",
+        ],
       },
       {
         modifier_type: "prefix",
@@ -189,9 +224,11 @@ export const one_hand_weapon = [
       },
     ],
 
-    source: [{
-      content: "參考小D(gk224224)所整理的資料",
-      url: "https://docs.google.com/spreadsheets/d/18GuwE0arNWEO25HvrgtUrDfIrIqCaOfPqGntQmKN5M0/edit?hl=zh-TW#gid=0",
-    },],
+    source: [
+      {
+        content: "參考小D(gk224224)所整理的資料",
+        url: "https://docs.google.com/spreadsheets/d/18GuwE0arNWEO25HvrgtUrDfIrIqCaOfPqGntQmKN5M0/edit?hl=zh-TW#gid=0",
+      },
+    ],
   },
-];
+]

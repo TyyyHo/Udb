@@ -235,9 +235,11 @@ export const ring = [
       },
     ],
 
-    source: [{
-      content: "參考小D(gk224224)所整理的資料",
-      url: "https://docs.google.com/spreadsheets/d/18GuwE0arNWEO25HvrgtUrDfIrIqCaOfPqGntQmKN5M0/edit?hl=zh-TW#gid=0",
-    },],
+    source: [
+      {
+        content: "參考小D(gk224224)所整理的資料",
+        url: "https://docs.google.com/spreadsheets/d/18GuwE0arNWEO25HvrgtUrDfIrIqCaOfPqGntQmKN5M0/edit?hl=zh-TW#gid=0",
+      },
+    ],
   },
-];
+]

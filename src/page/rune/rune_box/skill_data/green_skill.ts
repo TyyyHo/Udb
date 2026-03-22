@@ -958,4 +958,4 @@ export const green_skill = [
   },
 
   // end
-];
+]

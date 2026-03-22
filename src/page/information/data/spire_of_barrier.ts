@@ -2,7 +2,7 @@ export const spire_of_barrier = [
   {
     page_title_en: "spire_of_barrier",
     page_title: "結界尖塔",
-    page_type:"information_system",
+    page_type: "information_system",
     page_main_content:
       "角色達到20等後，透過募集布告欄進入結界尖塔，於尖塔內擊殺怪物即可根據守護的階段領取獎勵。結界尖塔共有四個難度，每天只能選擇一個難度進入，簡單/普通/困難三個難度只要進入並達到20階段即可通關，通關後開啟下一個難度；混沌難度共有70階段，若隊伍強度足夠可以領取遠超前三個難度的獎勵。",
     page_main_img: "",
@@ -59,4 +59,4 @@ export const spire_of_barrier = [
     ],
     source: [],
   },
-];
+]

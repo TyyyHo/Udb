@@ -2,7 +2,7 @@ export const rarity = [
   {
     page_title_en: "rarity",
     page_title: "稀有度",
-    page_type:"information_mechanics",
+    page_type: "information_mechanics",
     page_main_content:
       "遊戲內大部分裝備、技能以及道具都有稀有度之分，稀有度分為「普通」、「魔法」、「稀有」、「傳說」以及「遺物」。 (並非每種道具都有傳說或遺物階級)",
     page_main_img: "",
@@ -36,4 +36,4 @@ export const rarity = [
     ],
     source: [],
   },
-];
+]

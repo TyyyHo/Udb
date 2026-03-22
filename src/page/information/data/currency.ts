@@ -2,7 +2,7 @@ export const currency = [
   {
     page_title_en: "currency",
     page_title: "貨幣",
-    page_type:"information_system",
+    page_type: "information_system",
     page_main_content:
       "遊戲中有許多種類的貨幣，每種都有各自的用途，其中只有鑽石以及紅寶石是帳號供通，其餘貨幣皆為每個角色獨立擁有，且無法直接轉移。",
     page_main_img: "",
@@ -85,4 +85,4 @@ export const currency = [
     ],
     source: [],
   },
-];
+]

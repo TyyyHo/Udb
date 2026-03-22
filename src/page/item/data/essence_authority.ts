@@ -2,7 +2,7 @@ export const essence_authority = [
   {
     page_title_en: "essence_authority",
     page_title: "精華:權能",
-    page_btn_content:["一般版本", "流亡者好讀版"],
+    page_btn_content: ["一般版本", "流亡者好讀版"],
     page_type: "item_item",
     page_main_content: "",
     page_main_img: "",
@@ -66,4 +66,4 @@ export const essence_authority = [
     ],
     source: [],
   },
-];
+]

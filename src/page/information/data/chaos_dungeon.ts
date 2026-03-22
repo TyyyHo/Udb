@@ -2,7 +2,7 @@ export const chaos_dungeon = [
   {
     page_title_en: "chaos_dungeon",
     page_title: "混沌石像",
-    page_type:"information_system",
+    page_type: "information_system",
     page_main_content:
       "劇情通關後可通過傳送門來到城鎮-薩魯托，跟隨任務的引導便會解鎖混沌石像，可以將混沌卡片放入石像中，開啟傳送門進入混沌副本，在副本中可透過擊殺怪物取得豐厚的獎勵。",
     page_main_img: "",
@@ -32,4 +32,4 @@ export const chaos_dungeon = [
     ],
     source: [],
   },
-];
+]

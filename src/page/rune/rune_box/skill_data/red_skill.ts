@@ -258,7 +258,8 @@ export const red_skill = [
   {
     rune_name_en: "lightning_vortex",
     rune_name_ch: "閃電漩渦",
-    rune_content: "揮擊武器，對多數敵人造成傷害並引起漩渦，漩渦將對周圍敵人造成額外傷害",
+    rune_content:
+      "揮擊武器，對多數敵人造成傷害並引起漩渦，漩渦將對周圍敵人造成額外傷害",
     rune_img_url: "/img/rune/skill/red/閃電漩渦.jpg",
     link_url: "/rune/lightning_vortex",
     rune_tag: ["攻擊", "近距", "廣域", "打擊", "閃電", "閃電漩渦"],
@@ -379,7 +380,8 @@ export const red_skill = [
     },
     rune_lv30: {
       consume: "14.6",
-      value: "物理傷害+223<br>物理傷害551%<br>血之領域內我軍的出血傷害增幅12.9%",
+      value:
+        "物理傷害+223<br>物理傷害551%<br>血之領域內我軍的出血傷害增幅12.9%",
     },
     sub_content: [],
     source: [],
@@ -724,4 +726,4 @@ export const red_skill = [
   },
 
   // end
-];
+]

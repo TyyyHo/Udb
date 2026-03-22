@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { combined_data_information } from "./combined_data_information";
+import { Link } from "react-router-dom"
+import { combined_data_information } from "./combined_data_information"
 
 const InformationList = () => {
   return (
@@ -10,19 +9,19 @@ const InformationList = () => {
         <h3 className="title">入門指南</h3>
         <div className="box_container">
           {combined_data_information
-            .filter((i) => {
-              return i.page_type === "information_beginner";
+            .filter(i => {
+              return i.page_type === "information_beginner"
             })
             .map((item, index) => {
               return (
                 <Link
-                className={`box ${item.page_type}`}
+                  className={`box ${item.page_type}`}
                   to={`/information/${item.page_title_en}`}
                   key={index}
                 >
                   {item.page_title}
                 </Link>
-              );
+              )
             })}
           {/* <Link className="box" to={`/information/trivia`}>
             遊戲冷知識
@@ -34,8 +33,8 @@ const InformationList = () => {
         <h3 className="title">遊戲系統</h3>
         <div className="box_container">
           {combined_data_information
-            .filter((i) => {
-              return i.page_type === "information_system";
+            .filter(i => {
+              return i.page_type === "information_system"
             })
             .map((item, index) => {
               return (
@@ -46,7 +45,7 @@ const InformationList = () => {
                 >
                   {item.page_title}
                 </Link>
-              );
+              )
             })}
           {/* <Link className="box" to={`/information/currency`}>
             貨幣
@@ -58,19 +57,19 @@ const InformationList = () => {
         <h3 className="title">遊戲機制</h3>
         <div className="box_container">
           {combined_data_information
-            .filter((i) => {
-              return i.page_type === "information_mechanics";
+            .filter(i => {
+              return i.page_type === "information_mechanics"
             })
             .map((item, index) => {
               return (
                 <Link
-                className={`box ${item.page_type}`}
+                  className={`box ${item.page_type}`}
                   to={`/information/${item.page_title_en}`}
                   key={index}
                 >
                   {item.page_title}
                 </Link>
-              );
+              )
             })}
           {/* <Link className="box" to={`/information/status`}>
             異常狀態
@@ -91,7 +90,7 @@ const InformationList = () => {
       </div>
       {/* end */}
     </div>
-  );
-};
+  )
+}
 
-export default InformationList;
+export default InformationList

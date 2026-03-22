@@ -2,7 +2,7 @@ export const trivia = [
   {
     page_title_en: "trivia",
     page_title: "遊戲冷知識",
-    page_type:"information_beginner",
+    page_type: "information_beginner",
     page_main_content: "整理遊戲冷知識。",
     page_main_img: "",
     sub_content: [
@@ -20,4 +20,4 @@ export const trivia = [
     ],
     source: [],
   },
-];
+]

@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { combined_data_item } from "./combined_data_item";
+import { Link } from "react-router-dom"
+import { combined_data_item } from "./combined_data_item"
 
 const Item_list = () => {
   return (
@@ -43,8 +42,8 @@ const Item_list = () => {
         <h3 className="title">道具</h3>
         <div className="box_container">
           {combined_data_item
-            .filter((i) => {
-              return i.page_type === "item_item";
+            .filter(i => {
+              return i.page_type === "item_item"
             })
             .map((item, index) => {
               return (
@@ -55,7 +54,7 @@ const Item_list = () => {
                 >
                   {item.page_title}
                 </Link>
-              );
+              )
             })}
           {/* <Link className="box" to={`/item/essence`}>
             符咒
@@ -68,7 +67,7 @@ const Item_list = () => {
 
       {/* end */}
     </div>
-  );
-};
+  )
+}
 
-export default Item_list;
+export default Item_list

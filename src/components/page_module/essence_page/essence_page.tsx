@@ -1,10 +1,17 @@
-import React from "react";
-import { useState } from "react";
-import "./essence_page.scss";
-import "./essence_page_mobile.scss";
+import { useState } from "react"
+import "./essence_page.scss"
+import "./essence_page_mobile.scss"
 
-const Page_form = ({ data }) => {
-  const [subject, set_subject] = useState("一般版本");
+type EssencePageProps = {
+  data: any
+}
+
+const EssencePage = ({ data }: EssencePageProps) => {
+  const [subject, setSubject] = useState("一般版本")
+  const pageBtnContent: string[] = data?.page_btn_content ?? []
+  const subContent: any[] = data?.sub_content ?? []
+  const sources: any[] = data?.source ?? []
+
   return (
     <>
       <div className="sub_container">
@@ -13,12 +20,12 @@ const Page_form = ({ data }) => {
           <div className="page_title">{data.page_title}</div>
 
           {/* 類別切換鈕 */}
-          {data.page_btn_content.map((item, index) => {
+          {pageBtnContent.map((item: string, index: number) => {
             return (
-              <button key={index} onClick={() => set_subject(item)}>
+              <button key={index} onClick={() => setSubject(item)}>
                 {item}
               </button>
-            );
+            )
           })}
         </div>
 
@@ -32,7 +39,7 @@ const Page_form = ({ data }) => {
                 <th className={subject}>精華別稱</th>
                 <th>精華效果</th>
               </tr>
-              {data.sub_content.map((item, index) => {
+              {subContent.map((item: any, index: number) => {
                 return (
                   <tr key={index}>
                     <td className="img_container">
@@ -44,7 +51,7 @@ const Page_form = ({ data }) => {
                     </td>
                     <td className="essence_effect">{item.essence_effect}</td>
                   </tr>
-                );
+                )
               })}
             </tbody>
           </table>
@@ -53,14 +60,14 @@ const Page_form = ({ data }) => {
         <div className="page_sub">
           <div className="page_sub_title">資料參考/來源</div>
           <ol>
-            {data.source.map((item, index) => {
+            {sources.map((item: any, index: number) => {
               return (
                 <li key={index}>
                   <a href={item.url} target="_blank" rel="noreferrer noopener">
                     <span className="link_to_other_web"> {item.content}</span>
                   </a>
                 </li>
-              );
+              )
             })}
           </ol>
         </div>
@@ -68,7 +75,7 @@ const Page_form = ({ data }) => {
         {/* end */}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Page_form;
+export default EssencePage

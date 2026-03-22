@@ -1,17 +1,20 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import "./skill_page.scss";
+import { useParams } from "react-router-dom"
+import "./skill_page.scss"
 
 // data
-import { combined_data_skill } from "../rune_box/skill_data/combined_data_skill";
+import { combined_data_skill } from "../rune_box/skill_data/combined_data_skill"
 
-const Skill_page = () => {
+const SkillPage = () => {
   // 網址參數
-  let { rune_obj } = useParams();
+  const { rune_obj } = useParams()
   // 選取相符資料
-  let matched_data = combined_data_skill.filter((item) => {
-    return item.rune_name_en === rune_obj;
-  })[0];
+  const matched_data = combined_data_skill.find(item => {
+    return item.rune_name_en === rune_obj
+  }) as any
+
+  if (!matched_data) {
+    return null
+  }
 
   return (
     <div className="main_container">
@@ -32,24 +35,24 @@ const Skill_page = () => {
               <div className="page_rune_tag_contanier">
                 {/* filter濾掉技能名稱，再map標籤 */}
                 {matched_data.rune_tag
-                  .filter((target) => {
-                    return target !== matched_data.rune_name_ch;
+                  .filter((target: string) => {
+                    return target !== matched_data.rune_name_ch
                   })
-                  .map((item, index) => {
+                  .map((item: string, index: number) => {
                     return (
                       <span className="page_rune_tag" key={index}>
                         {item}
                       </span>
-                    );
+                    )
                   })}
               </div>
               <div className="page_rune_limit_contanier">
-                {matched_data.rune_limit.map((item, index) => {
+                {matched_data.rune_limit.map((item: string, index: number) => {
                   return (
                     <div className="page_rune_limit" key={index}>
                       {item}
                     </div>
-                  );
+                  )
                 })}
               </div>
             </div>
@@ -118,31 +121,31 @@ const Skill_page = () => {
         </div>
 
         {/* 附加內容 */}
-        {matched_data.sub_content.map((item, index) => {
+        {matched_data.sub_content.map((item: any, index: number) => {
           return (
             <div className="page_sub" key={index}>
               <div className="page_sub_title">{item.sub_content_title}</div>
               <div className="page_sub_content">{item.rune_sub_content}</div>
               <div className="img_frame">
-                {item.img.map((t, index) => {
+                {item.img.map((t: any, index: number) => {
                   return (
                     <div className="page_img_container" key={index}>
                       <img className="page_sub_img" src={t.url} alt="img" />
                       <div className="img_description">{t.description}</div>
                     </div>
-                  );
+                  )
                 })}
               </div>
             </div>
-          );
+          )
         })}
 
         {/* 資料來源 */}
         <div className="page_source page_sub">
           <div className="page_source_title page_sub_title">資料參考/來源</div>
           <ol>
-            {matched_data.source.map((item, index) => {
-              return <li key={index}> {item.content}</li>;
+            {matched_data.source.map((item: any, index: number) => {
+              return <li key={index}> {item.content}</li>
             })}
           </ol>
         </div>
@@ -150,7 +153,7 @@ const Skill_page = () => {
         {/* end */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skill_page;
+export default SkillPage

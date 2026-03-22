@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { combined_data_modifier } from "./combined_data_modifier";
+import { Link } from "react-router-dom"
+import { combined_data_modifier } from "./combined_data_modifier"
 
 const Modifier_list = () => {
   const matched_data = combined_data_modifier.filter(
-    (item) => item.page_type === "modifier_equipment"
-  );
+    item => item.page_type === "modifier_equipment"
+  )
   return (
     <div id="modifier_list" className="main_container">
       <div className="sub_container modifier">
@@ -20,14 +19,14 @@ const Modifier_list = () => {
               >
                 {item.page_title}
               </Link>
-            );
+            )
           })}
         </div>
       </div>
 
       {/* end */}
     </div>
-  );
-};
+  )
+}
 
-export default Modifier_list;
+export default Modifier_list

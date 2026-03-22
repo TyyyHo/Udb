@@ -2,7 +2,7 @@ export const status = [
   {
     page_title_en: "status",
     page_title: "異常狀態",
-    page_type:"information_mechanics",
+    page_type: "information_mechanics",
     page_main_content:
       "遊戲中有多種異常狀態，每種都需要透過特定種類的傷害才能造成。",
     page_main_img: "",
@@ -41,4 +41,4 @@ export const status = [
     ],
     source: [],
   },
-];
+]

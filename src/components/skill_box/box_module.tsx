@@ -1,37 +1,54 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
-const BoxModule = ({ className, rune_data, filter_bar, language }) => {
-  let filter_by_tag = (rune) => {
+type RuneItem = {
+  rune_tag: string[]
+  link_url: string
+  rune_img_url: string
+  rune_name_ch: string
+  rune_name_en: string
+}
+
+type BoxModuleProps = {
+  className: string
+  rune_data: RuneItem[]
+  filter_bar: string
+  language: "ch" | "en"
+}
+
+const BoxModule = ({
+  className,
+  rune_data,
+  filter_bar,
+  language,
+}: BoxModuleProps) => {
+  const filterByTag = (rune: RuneItem): boolean => {
     // 搜尋字串轉陣列
-    let filter_bar_array = filter_bar.split(" ");
+    const filterBarArray = filter_bar.split(" ").filter(Boolean)
     // 資料tag轉字串
-    let tag = rune.rune_tag.join("");
+    const tag = rune.rune_tag.join("")
     // 搜尋欄若為空字串，return所有技能
     if (filter_bar === "") {
-      return rune;
-    } else {
-      // 搜尋陣列中，有符合tag的技能就return
-      if (
-        filter_bar_array.every((arr_ele) => {
-          return tag.indexOf(arr_ele) >= 0;
-        })
-      ) {
-        return rune;
-      }
+      return true
     }
-  };
+
+    // 搜尋陣列中，有符合tag的技能就return
+    return filterBarArray.every(arrEle => tag.indexOf(arrEle) >= 0)
+  }
 
   return (
     <div className={className}>
       {rune_data
-        .filter((rune) => {
-          return filter_by_tag(rune);
+        .filter(rune => {
+          return filterByTag(rune)
         })
         .map((item, index) => {
           return (
             <Link className="rune_box" key={index} to={item.link_url}>
-              <img src={item.rune_img_url} alt="rune_img" className={index} />
+              <img
+                src={item.rune_img_url}
+                alt="rune_img"
+                className={String(index)}
+              />
               {
                 {
                   ch: (
@@ -45,10 +62,10 @@ const BoxModule = ({ className, rune_data, filter_bar, language }) => {
                 }[language]
               }
             </Link>
-          );
+          )
         })}
     </div>
-  );
-};
+  )
+}
 
-export { BoxModule };
+export { BoxModule }

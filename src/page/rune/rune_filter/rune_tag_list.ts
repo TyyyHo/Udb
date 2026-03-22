@@ -31,4 +31,4 @@ export const rune_tag_list = [
   "防禦強化",
   "攻擊紋章",
   "防禦紋章",
-];
+]

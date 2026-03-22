@@ -1,0 +1,5 @@
+# Husky pre-push
+npm run format:check || exit 1
+npm run lint:check || exit 1
+npm run type:check || exit 1
+npm run test || exit 1

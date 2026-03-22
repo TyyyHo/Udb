@@ -2,7 +2,7 @@ export const six_link = [
   {
     page_title_en: "six_link",
     page_title: "取得六邊",
-    page_type:"information_beginner",
+    page_type: "information_beginner",
     page_main_content:
       "取得六邊技能是所有玩家在遊戲前中期最重要的需求，整理目前已知的方法供參考。",
     page_main_img: "",
@@ -52,4 +52,4 @@ export const six_link = [
       },
     ],
   },
-];
+]

@@ -20,7 +20,6 @@ export const green_link = [
     sub_content: [],
     source: [],
   },
-  
-    //   end
-  ];
-  
+
+  //   end
+]
