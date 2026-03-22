@@ -4,12 +4,12 @@ import "./rune_box_mobile.scss";
 import { Box_module } from "../../../components/skill_box/box_module.jsx";
 
 // data
-import { red_skill } from "./skill_data/red_skill.js";
-import { green_skill } from "./skill_data/green_skill.js";
-import { blue_skill } from "./skill_data/blue_skill.js";
-import { red_link } from "./link_data/red_link.js";
-import { green_link } from "./link_data/green_link.js";
-import { blue_link } from "./link_data/blue_link.js";
+import { red_skill } from "./skill_data/red_skill";
+import { green_skill } from "./skill_data/green_skill";
+import { blue_skill } from "./skill_data/blue_skill";
+import { red_link } from "./link_data/red_link";
+import { green_link } from "./link_data/green_link";
+import { blue_link } from "./link_data/blue_link";
 
 const Rune_box = ({ rune_type, filter_bar, language }) => {
   return (

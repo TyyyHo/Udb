@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 // data
-import { combined_data_item } from "./combined_data_item.js";
+import { combined_data_item } from "./combined_data_item";
 
 // components
 import Essence_page from "../../components/page_module/essence_page/essence_page.jsx";

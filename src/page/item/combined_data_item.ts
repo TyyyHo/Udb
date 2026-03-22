@@ -6,9 +6,11 @@ import { essence_rune } from "./data/essence_rune";
 // equipment
 
 // 整合輸出
-export const combined_data_item = essence
-  .concat(essence_authority)
-  .concat(essence_rune);
+export const combined_data_item = [
+  ...essence,
+  ...essence_authority,
+  ...essence_rune,
+];
 // 以上為道具
 
 // 以上為裝備

@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import "./rune_filter.scss";
-import { rune_tag_list } from "./rune_tag_list.js";
+import { rune_tag_list } from "./rune_tag_list";
 
 const Rune_filter = ({
   rune_type,

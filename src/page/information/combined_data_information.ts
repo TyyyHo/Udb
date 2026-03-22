@@ -17,16 +17,18 @@ import { project } from "./data/project";
 // import { status } from "./data/status";
 
 // 整合輸出
-export const combined_data_information = common_questions
-  .concat(six_link)
+export const combined_data_information = [
+  ...common_questions,
+  ...six_link,
   // 以上為beginner
-  .concat(currency)
-  .concat(zodiac)
-  .concat(chaos_dungeon)
-  .concat(character_title)
-  .concat(skill_cost)
-  .concat(spire_of_barrier)
+  ...currency,
+  ...zodiac,
+  ...chaos_dungeon,
+  ...character_title,
+  ...skill_cost,
+  ...spire_of_barrier,
   // 以上為system
-  .concat(rarity)
-  .concat(project);
+  ...rarity,
+  ...project,
+];
 // 以上為mechanics

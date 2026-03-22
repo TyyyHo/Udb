@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 // data
-import { combined_data_modifier } from "./combined_data_modifier.js";
+import { combined_data_modifier } from "./combined_data_modifier";
 
 // components
 import Modifier_module from "../../components/modifier_module/modifier_module";

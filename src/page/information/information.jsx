@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 // data
-import { combined_data_information } from "./combined_data_information.js";
+import { combined_data_information } from "./combined_data_information";
 
 // components
 import Page from "../../components/page_module/regular/page";

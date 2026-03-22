@@ -14,17 +14,19 @@ import { belt } from "./data/belt";
 
 
 // 整合輸出
-export const combined_data_modifier = weapon
-  .concat(helmet)
-  .concat(spaulders)
-  .concat(armor)
-  .concat(gloves)
-  .concat(shoes)
-  // .concat(shield)
-  .concat(quiver)
-  .concat(necklace)
-  .concat(ring)
-  .concat(belt);
+export const combined_data_modifier = [
+  ...weapon,
+  ...helmet,
+  ...spaulders,
+  ...armor,
+  ...gloves,
+  ...shoes,
+  // ...shield,
+  ...quiver,
+  ...necklace,
+  ...ring,
+  ...belt,
+];
 // 以上為裝備
 
 // 以上為
