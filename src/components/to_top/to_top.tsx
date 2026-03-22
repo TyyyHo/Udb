@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "./to_top.css"
 import "./to_top_mobile.css"
+import { assetUrl } from "../../utils/asset_url"
 
 const ToTop = () => {
   const [toTopBtn, setToTopBtn] = useState(false)
@@ -28,7 +29,11 @@ const ToTop = () => {
     return (
       <>
         <div className="to_top">
-          <img src="/img/web/up_ward.png" alt="A" onClick={goToTop} />
+          <img
+            src={assetUrl("/img/web/up_ward.png")}
+            alt="A"
+            onClick={goToTop}
+          />
         </div>
       </>
     )

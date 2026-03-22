@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./navigation.css"
 import "./navigation_mobile.css"
+import { assetUrl } from "../../utils/asset_url"
 
 const Navigation = () => {
   // mobile時navi縮放狀態
@@ -15,7 +16,7 @@ const Navigation = () => {
     <div id="navigation">
       <div id="logo">
         <Link id="web_name" to={`/`}>
-          <img src="/img/logo/logo_big.png" alt="logo" />
+          <img src={assetUrl("/img/logo/logo_big.png")} alt="logo" />
         </Link>
       </div>
 

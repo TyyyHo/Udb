@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./essence_page.css"
 import "./essence_page_mobile.css"
+import { assetUrl } from "../../../utils/asset_url"
 
 type EssencePageProps = {
   data: any
@@ -43,7 +44,7 @@ const EssencePage = ({ data }: EssencePageProps) => {
                 return (
                   <tr key={index}>
                     <td className="img_container">
-                      <img src={item.essence_url} alt="" />
+                      <img src={assetUrl(item.essence_url)} alt="" />
                     </td>
                     <td className="essence_content">{item.essence_name}</td>
                     <td className={`${subject}  essence_content`}>

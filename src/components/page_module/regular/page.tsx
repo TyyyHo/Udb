@@ -1,5 +1,6 @@
 import "./page.css"
 import "./page_mobile.css"
+import { assetUrl } from "../../../utils/asset_url"
 
 type PageProps = {
   data: any
@@ -49,7 +50,7 @@ const Page = ({ data }: PageProps) => {
                       <img
                         className="page_sub_img"
                         loading={index === 0 ? "eager" : "lazy"}
-                        src={t.url}
+                        src={assetUrl(t.url)}
                         alt="img"
                       />
                       <div className="img_description">{t.description}</div>

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import "./skill_page.css"
+import { assetUrl } from "../../../utils/asset_url"
 
 // data
 import { combined_data_skill } from "../rune_box/skill_data/combined_data_skill"
@@ -26,7 +27,7 @@ const SkillPage = () => {
             {/* 主要視覺圖片 */}
             <img
               className="page_main_img"
-              src={matched_data.rune_img_url}
+              src={assetUrl(matched_data.rune_img_url)}
               alt="page_main_img"
             />
 
@@ -130,7 +131,11 @@ const SkillPage = () => {
                 {item.img.map((t: any, index: number) => {
                   return (
                     <div className="page_img_container" key={index}>
-                      <img className="page_sub_img" src={t.url} alt="img" />
+                      <img
+                        className="page_sub_img"
+                        src={assetUrl(t.url)}
+                        alt="img"
+                      />
                       <div className="img_description">{t.description}</div>
                     </div>
                   )

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { assetUrl } from "../../utils/asset_url"
 
 type RuneItem = {
   rune_tag: string[]
@@ -45,7 +46,7 @@ const BoxModule = ({
           return (
             <Link className="rune_box" key={index} to={item.link_url}>
               <img
-                src={item.rune_img_url}
+                src={assetUrl(item.rune_img_url)}
                 alt="rune_img"
                 className={String(index)}
               />

@@ -12,6 +12,7 @@ import Loading from "./components/loading/loading"
 import Navigation from "./components/navigation/navigation"
 import RouterRestoration from "./components/router_restoration/router_restoration"
 import ToTop from "./components/to_top/to_top"
+import { assetUrl } from "./utils/asset_url"
 
 // information
 const InformationList = lazy(
@@ -65,8 +66,12 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Udb - 惡月十三中文資料庫</title>
-        <link rel="icon" href="/img/web/icon.ico" type="image/ico" />
-        <link rel="apple-touch-icon" href="/img/moon.png" />
+        <link
+          rel="icon"
+          href={assetUrl("/img/web/icon.ico")}
+          type="image/ico"
+        />
+        <link rel="apple-touch-icon" href={assetUrl("/img/moon.png")} />
         <meta name="description" content="惡月十三中文資料庫" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
