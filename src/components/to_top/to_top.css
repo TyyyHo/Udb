@@ -12,8 +12,7 @@
   z-index: 1000;
   display: flex;
   cursor: pointer;
-
-  img {
-    padding: 3px;
-  }
+}
+.to_top img {
+  padding: 3px;
 }

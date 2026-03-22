@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1250px) {
+  #navigation #logo {
+    width: 175px;
+    padding: 0 2%;
+  }
+  #navigation .navi_container .navi_item {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #navigation #logo {
+    width: 150px;
+  }
+  #navigation #logo img {
+    width: 80%;
+  }
+  #navigation .off {
+    display: none;
+  }
+  #navigation .navi_btn {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+  }
+  #navigation .navi_btn .navi_toggler {
+    color: white;
+  }
+  #navigation .navi_container {
+    margin: 8.1vh 0 0 0;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+  }
+  #navigation .navi_container .navi_item {
+    margin: 10px 10px;
+    font-size: 26px;
+    color: rgba(231, 231, 231, 0.95);
+  }
+}

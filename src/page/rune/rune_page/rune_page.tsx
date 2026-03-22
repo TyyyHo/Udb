@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import "./skill_page.scss"
+import "./skill_page.css"
 
 // data
 import { combined_data_skill } from "../rune_box/skill_data/combined_data_skill"

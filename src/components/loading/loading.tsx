@@ -1,4 +1,4 @@
-import "./loading.scss"
+import "./loading.css"
 import ladingImg from "./asset/loading.webp"
 
 const Loading = () => {

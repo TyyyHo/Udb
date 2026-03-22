@@ -1,0 +1,80 @@
+.page_index {
+  border: 3px double rgb(231, 231, 231);
+}
+
+.skill_page_main .page_title {
+  font-size: 3vh;
+  border-bottom: 2px solid white;
+  margin-bottom: 1.5vh;
+}
+.skill_page_main .page_main_container {
+  position: relative;
+}
+.skill_page_main .page_main_container .page_main_content {
+  font-size: 20px;
+}
+.skill_page_main .page_main_container .page_main_img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+}
+.skill_page_main .page_rune_contanier {
+  width: 75%;
+  margin-bottom: 20px;
+}
+.skill_page_main .page_rune_contanier .page_rune_tag_contanier,
+.skill_page_main .page_rune_contanier .page_rune_limit_contanier {
+  margin-bottom: 0.5%;
+  width: 90%;
+}
+.skill_page_main .page_rune_contanier .page_rune_tag_contanier .page_rune_tag,
+.skill_page_main .page_rune_contanier .page_rune_tag_contanier .page_rune_limit,
+.skill_page_main .page_rune_contanier .page_rune_limit_contanier .page_rune_tag,
+.skill_page_main
+  .page_rune_contanier
+  .page_rune_limit_contanier
+  .page_rune_limit {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 3px 5px;
+  margin-right: 1%;
+  margin-bottom: 5px;
+}
+.skill_page_main .page_rune_contanier .page_rune_tag_contanier .page_rune_tag,
+.skill_page_main
+  .page_rune_contanier
+  .page_rune_limit_contanier
+  .page_rune_tag {
+  color: rgb(197, 226, 253);
+}
+.skill_page_main .page_rune_contanier .page_rune_tag_contanier .page_rune_limit,
+.skill_page_main
+  .page_rune_contanier
+  .page_rune_limit_contanier
+  .page_rune_limit {
+  color: #fffceb;
+}
+
+.page_skill_rank_container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.page_skill_rank_container table {
+  border-collapse: collapse;
+}
+.page_skill_rank_container td,
+.page_skill_rank_container th {
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px 14px;
+}
+.page_skill_rank_container .magic_rune {
+  color: rgb(78, 112, 226);
+}
+.page_skill_rank_container .rare_rune {
+  color: rgb(205, 235, 72);
+}
+.page_skill_rank_container .legend_rune {
+  color: #c72634;
+}

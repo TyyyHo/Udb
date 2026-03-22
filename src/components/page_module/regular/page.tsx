@@ -1,5 +1,5 @@
-import "./page.scss"
-import "./page_mobile.scss"
+import "./page.css"
+import "./page_mobile.css"
 
 type PageProps = {
   data: any

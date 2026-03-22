@@ -1,5 +1,5 @@
-import "./app.scss"
-import "./app_mobile.scss"
+import "./app.css"
+import "./app_mobile.css"
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Suspense, lazy } from "react"
