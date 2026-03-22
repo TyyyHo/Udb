@@ -1,7 +1,7 @@
 import React from "react";
 import "./rune_box.scss";
 import "./rune_box_mobile.scss";
-import { Box_module } from "../../../components/skill_box/box_module.jsx";
+import { Box_module } from "../../../components/skill_box/box_module";
 
 // data
 import { red_skill } from "./skill_data/red_skill";

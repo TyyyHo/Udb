@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { combined_data_item } from "./combined_data_item";
 
 // components
-import Essence_page from "../../components/page_module/essence_page/essence_page.jsx";
+import Essence_page from "../../components/page_module/essence_page/essence_page";
 
 const Item = () => {
   // 網址參數

@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 
 // componenets
-import Rune_filter from "./rune_filter/rune_filter.jsx";
-import Rune_box from "./rune_box/rune_box.jsx";
+import Rune_filter from "./rune_filter/rune_filter";
+import Rune_box from "./rune_box/rune_box";
 
 const Rune_list = () => {
   // 技能/連結切換

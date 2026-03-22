@@ -9,29 +9,29 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 // components
-import Navigation from "./components/navigation/navigation.jsx";
-import To_top from "./components/to_top/to_top.jsx";
+import Navigation from "./components/navigation/navigation";
+import To_top from "./components/to_top/to_top";
 import Loading from "./components/loading/loading";
-import Router_restoration from "./components/router_restoration/router_restoration.jsx";
+import Router_restoration from "./components/router_restoration/router_restoration";
 
 // pages
-import Home from "./page/home/home.jsx";
+import Home from "./page/home/home";
 
 // information
-const Information_list = lazy(() =>import(/* webpackChunkName: "Information_list" */ "./page/information/information_list.jsx"));
-const Information = lazy(() =>import(/* webpackChunkName: "Information" */ "./page/information/information.jsx"));
+const Information_list = lazy(() =>import(/* webpackChunkName: "Information_list" */ "./page/information/information_list"));
+const Information = lazy(() =>import(/* webpackChunkName: "Information" */ "./page/information/information"));
 
 // rune
-const Rune_list = lazy(() =>import(/* webpackChunkName: "Rune_list" */ "./page/rune/rune_list.jsx"));
-const Skill_page = lazy(() =>import(/* webpackChunkName: "Skill_page" */ "./page/rune/rune_page/rune_page.jsx"));
+const Rune_list = lazy(() =>import(/* webpackChunkName: "Rune_list" */ "./page/rune/rune_list"));
+const Skill_page = lazy(() =>import(/* webpackChunkName: "Skill_page" */ "./page/rune/rune_page/rune_page"));
 
 // item
-const Item_list = lazy(() =>import(/* webpackChunkName: "Item_list" */ "./page/item/item_list.jsx"));
-const Item = lazy(() =>import(/* webpackChunkName: "Item" */ "./page/item/item.jsx"));
+const Item_list = lazy(() =>import(/* webpackChunkName: "Item_list" */ "./page/item/item_list"));
+const Item = lazy(() =>import(/* webpackChunkName: "Item" */ "./page/item/item"));
 
 // modfier
-const Modifier_list = lazy(() =>import(/* webpackChunkName: "Modifier_list" */ "./page/modifier/modifier_list.jsx"));
-const Modifier = lazy(() =>import(/* webpackChunkName: "Modifier" */ "./page/modifier/modifier.jsx"));
+const Modifier_list = lazy(() =>import(/* webpackChunkName: "Modifier_list" */ "./page/modifier/modifier_list"));
+const Modifier = lazy(() =>import(/* webpackChunkName: "Modifier" */ "./page/modifier/modifier"));
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
